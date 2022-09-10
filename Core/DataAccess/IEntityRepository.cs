@@ -1,4 +1,5 @@
-﻿using Entities.Abstract;
+﻿
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,8 +7,10 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
+
+    // Core diger katmanlari referans almaz. Evrensel kodlarimi yaziyorum. Diger yazacagim projelerdede kullanabiliyorum.
     public interface IEntityRepository<T> where T:class ,IEntity,new()
     {
 
